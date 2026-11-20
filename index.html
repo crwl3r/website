@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>crwlr@android-server</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: #0d1117;
+      color: #c9d1d9;
+      font-family: 'Courier New', Courier, monospace;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .terminal-card {
+      background-color: #161b22;
+      border: 1px solid #30363d;
+      border-radius: 8px;
+      max-width: 520px;
+      width: 100%;
+      padding: 28px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 24px;
+      padding-bottom: 14px;
+      border-bottom: 1px solid #30363d;
+    }
+
+    .dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+    }
+
+    .red { background-color: #ff5f56; }
+    .yellow { background-color: #ffbd2e; }
+    .green { background-color: #27c93f; }
+
+    .title {
+      margin-left: 8px;
+      font-size: 0.9rem;
+      color: #8b949e;
+    }
+
+    h1 {
+      color: #58a6ff;
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+
+    .status {
+      display: inline-block;
+      background-color: rgba(39, 201, 63, 0.15);
+      color: #3fb950;
+      border: 1px solid rgba(63, 185, 80, 0.4);
+      padding: 4px 10px;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      margin-bottom: 20px;
+    }
+
+    p {
+      line-height: 1.6;
+      font-size: 0.95rem;
+      margin-bottom: 20px;
+      color: #b1bac4;
+    }
+
+    .specs {
+      background-color: #0d1117;
+      border: 1px solid #30363d;
+      border-radius: 6px;
+      padding: 16px;
+      font-size: 0.88rem;
+    }
+
+    .specs div {
+      margin-bottom: 8px;
+    }
+
+    .specs div:last-child {
+      margin-bottom: 0;
+    }
+
+    .label {
+      color: #79c0ff;
+    }
+
+    .footer {
+      margin-top: 22px;
+      font-size: 0.8rem;
+      color: #8b949e;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="terminal-card">
+    <div class="header">
+      <span class="dot red"></span>
+      <span class="dot yellow"></span>
+      <span class="dot green"></span>
+      <span class="title">crwlr@localhost:~</span>
+    </div>
+
+    <h1>crwlr's Server</h1>
+    <div class="status">● SYSTEM ONLINE</div>
+
+    <p>
+      If you are seeing this page, my Android phone is officially running as a Linux web server. No cloud hosting, no VPS—just pure pocket hardware.
+    </p>
+
+    <div class="specs">
+      <div><span class="label">Host:</span> Android Linux Environment</div>
+      <div><span class="label">Operator:</span> crwlr</div>
+      <div><span class="label">Stack:</span> HTML5 + CSS3</div>
+      <div><span class="label">Status:</span> Serving live traffic</div>
+    </div>
+
+    <div class="footer">
+      Hosted directly from a smartphone • Built for Linux tutorials
+    </div>
+  </div>
+
+</body>
+</html>
